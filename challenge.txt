@@ -1,0 +1,7 @@
+1.) Initially, I created a master string of all the eligible characters(n=62). In a loop, I generated 15 random numbers between 0-61 as indices of the master string. To create the line, I appended the 15 randomly selected characters.
+
+2.) Size of file can be obtained by the ls -lh or wc -c commands. I used the wc -c and only used the first return value(file size). I used a simple while loop to keep on generating lines until the file size exceeded the maximum specifications(I used 1K instead of 1M).
+
+3.) I used the simple sort command which sorted the file according to the starting character of the line.
+
+5.) To count how many lines were removed, I calculated the number of lines in each file using wc -l command and took the difference.
